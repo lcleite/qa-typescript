@@ -12,10 +12,12 @@
     "@types/sinon": "^2.3.4",
     "chai": "^4.1.2",
     "mocha": "^3.5.3",
-    "sinon": "^3.2.1"
+    "sinon": "^3.2.1",
+    "nyc": "^11.2.1"
   },
   "scripts": {
-    "test": "mocha -r ts-node/register test/**/*.ts --timeout 10000"
+    "test": "nyc mocha -r ts-node/register test/**/*.ts --timeout 10000",
+    "posttest": "nyc report --reporter=json"
   },
   "author": "",
   "license": "ISC"
