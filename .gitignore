@@ -43,7 +43,7 @@ testem.log
 Thumbs.db
 
 # mapping
-src/*.js
-src/*.js.map
-test/*.js
-test/*js.map
+# src/*.js
+# src/*.js.map
+# test/*.js
+# test/*js.map
